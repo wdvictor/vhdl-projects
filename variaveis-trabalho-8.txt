@@ -1,0 +1,11 @@
+INPUT
+	JB(1-4) = numero a (4 bits)
+	JC(1-4) = numero b (4 bits)
+	
+	JB7 = seletor de adição ou subtração (1 bit)
+OUTPUT
+	led0 = overflow
+	Displays 7 segmentos
+		A = numero a
+		B = numero b
+		D = resultado
