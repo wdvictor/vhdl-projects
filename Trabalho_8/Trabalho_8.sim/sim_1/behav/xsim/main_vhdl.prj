@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/imports/new/overflow.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/imports/new/soma1.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/imports/new/soma4.vhd" \
+"../../../../Trabalho_8.srcs/sources_1/new/main.vhd" \
+
+# Do not sort compile order
+nosort
