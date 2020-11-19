@@ -7,7 +7,7 @@ entity mux4 is
            B : in STD_LOGIC_VECTOR (3 downto 0);
            C : in STD_LOGIC_VECTOR (3 downto 0);
            S : out STD_LOGIC_VECTOR (3 downto 0);
-           sel : in STD_LOGIC_VECTOR (1 downto 0));
+           sel : in STD_LOGIC);
 end mux4;
 
 architecture Behavioral of mux4 is
@@ -15,8 +15,8 @@ architecture Behavioral of mux4 is
 begin
 
   WITH sel select 
-    S <= A WHEN "00",
-         B WHEN "01",
+    S <= A WHEN '0',
+         B WHEN '1',
          C WHEN OTHERS;
     
 end Behavioral;

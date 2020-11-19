@@ -1,7 +1,7 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: /media/Infinity/Hugo/files/Vivado/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto ef7c473616ae46829eec548938972e2d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot main_behav xil_defaultlib.main -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ef7c473616ae46829eec548938972e2d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot main_behav xil_defaultlib.main -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis

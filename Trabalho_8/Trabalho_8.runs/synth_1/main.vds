@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 17 22:37:23 2020
+# Process ID: 6180
+# Current directory: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.runs/synth_1/main.vds
+# Journal file: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11032
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:14]
+INFO: [Synth 8-3491] module 'soma4' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:4' bound to instance 'soma' of component 'soma4' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'soma4' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:13]
+INFO: [Synth 8-3491] module 'complemento_de_1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd:4' bound to instance 'cp1' of component 'complemento_de_1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'complemento_de_1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'complemento_de_1' (1#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd:10]
+INFO: [Synth 8-3491] module 'soma1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:4' bound to instance 'sum1' of component 'soma1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'soma1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'soma1' (2#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:12]
+INFO: [Synth 8-3491] module 'soma1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:4' bound to instance 'sum2' of component 'soma1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:52]
+INFO: [Synth 8-3491] module 'soma1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:4' bound to instance 'sum3' of component 'soma1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:53]
+INFO: [Synth 8-3491] module 'soma1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd:4' bound to instance 'sum4' of component 'soma1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:54]
+INFO: [Synth 8-3491] module 'overflow' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/overflow.vhd:4' bound to instance 'ovf' of component 'overflow' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'overflow' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/overflow.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'overflow' (3#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/overflow.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'soma4' (4#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:13]
+INFO: [Synth 8-3491] module 'mux4' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd:5' bound to instance 'mux' of component 'mux4' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (5#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd:13]
+INFO: [Synth 8-3491] module 'complemento_de_1' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd:4' bound to instance 'cp' of component 'complemento_de_1' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'soma4' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd:4' bound to instance 'plus1' of component 'soma4' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:111]
+INFO: [Synth 8-3491] module 'BCD_to_7seg' declared at 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd:5' bound to instance 'seven_seg' of component 'BCD_to_7seg' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'BCD_to_7seg' [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'BCD_to_7seg' (6#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'main' (7#1) [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1024.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/constrs_1/imports/PED1/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1024.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1024.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1035.176 ; gain = 10.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     3|
+|4     |LUT2   |     4|
+|5     |LUT3   |     3|
+|6     |LUT4   |     4|
+|7     |LUT5   |     5|
+|8     |LUT6   |     8|
+|9     |FDRE   |    25|
+|10    |IBUF   |    10|
+|11    |OBUF   |    13|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.852 ; gain = 19.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.852 ; gain = 19.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.852 ; gain = 19.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1056.906 ; gain = 31.934
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 22:38:03 2020...

@@ -1,11 +1,11 @@
 0.7
 2020.1
 May 27 2020
-19:59:15
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd,1605578755,vhdl,,,,bcd_to_7seg,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd,1605576503,vhdl,,,,mux4,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd,1602809642,vhdl,,,,complemento_de_1,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/overflow.vhd,1602808302,vhdl,,,,overflow,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd,1602795266,vhdl,,,,soma1,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd,1605581731,vhdl,,,,soma4,,,,,,,,
-/home/hugo/Vivado/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd,1605582322,vhdl,,,,main,,,,,,,,
+20:09:33
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd,1605659820,vhdl,,,,bcd_to_7seg,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/Desktop/mux4.vhd,1605663190,vhdl,,,,mux4,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/complemento_de_1.vhd,1605659820,vhdl,,,,complemento_de_1,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/overflow.vhd,1605659820,vhdl,,,,overflow,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma1.vhd,1605659820,vhdl,,,,soma1,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/imports/new/soma4.vhd,1605659820,vhdl,,,,soma4,,,,,,,,
+C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Trabalho_8/Trabalho_8.srcs/sources_1/new/main.vhd,1605663284,vhdl,,,,main,,,,,,,,
