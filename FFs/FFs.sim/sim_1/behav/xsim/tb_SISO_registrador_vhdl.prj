@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FFs.srcs/sources_1/new/ff_D_preset_clr_assinc.vhd" \
+"../../../../FFs.srcs/sources_1/new/main.vhd" \
+"../../../../FFs.srcs/sim_1/new/tb_SISO_registrador.vhd" \
+
+# Do not sort compile order
+nosort
