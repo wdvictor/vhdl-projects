@@ -16,7 +16,7 @@ entity main is
 end main;
 
 architecture Behavioral of main is
-    
+   
  
     component ff_D_preset_clr_assinc
         Port ( D : in STD_LOGIC;
@@ -42,13 +42,30 @@ architecture Behavioral of main is
     signal q_out14 : std_logic := '0';
     signal q_out15 : std_logic := '0';
     
-
+    signal clk_dividido: std_logic := '0' ;
+    signal counter : integer range 1 to 100_000_000 := 1;
+    
 begin
+
+    divisor_clk : process(clk)
+     begin
+        if rising_edge(clk) then
+            if counter = 100_000_000 then
+                counter <= 1;
+                clk_dividido <= not clk_dividido;
+            else 
+                counter <= counter + 1;
+            end if ;   
+        end if;
+     end process;
+     
+
+
     ---Nesse trabalho de registradores, será usado apenas o reset, sendo
     ---o preset q o Q_not não necessários.
     ff_assinc0 : ff_D_preset_clr_assinc port map(
         D => ff_assinc_D,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out0,
         clr => ff_assinc_clr
     ); 
@@ -60,10 +77,8 @@ begin
     
     ff_assinc1 : ff_D_preset_clr_assinc port map(
         D => q_out0,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out1,
-       
-        
         clr => ff_assinc_clr
     ); 
     
@@ -71,7 +86,7 @@ begin
     
     ff_assinc2 : ff_D_preset_clr_assinc port map(
         D => q_out1,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out2,     
         clr => ff_assinc_clr
     );
@@ -80,7 +95,7 @@ begin
     
     ff_assinc3 : ff_D_preset_clr_assinc port map(
         D => q_out2,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out3,       
         clr => ff_assinc_clr
     );
@@ -89,7 +104,7 @@ begin
     
      ff_assinc4 : ff_D_preset_clr_assinc port map(
         D => q_out3,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out4,       
         clr => ff_assinc_clr
     );
@@ -98,7 +113,7 @@ begin
     
     ff_assinc5 : ff_D_preset_clr_assinc port map(
         D => q_out4,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out5,       
         clr => ff_assinc_clr
     );
@@ -107,7 +122,7 @@ begin
     
     ff_assinc6 : ff_D_preset_clr_assinc port map(
         D => q_out5,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out6,       
         clr => ff_assinc_clr
     );
@@ -116,7 +131,7 @@ begin
     
     ff_assinc7 : ff_D_preset_clr_assinc port map(
         D => q_out6,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out7,       
         clr => ff_assinc_clr
     );
@@ -126,7 +141,7 @@ begin
     
     ff_assinc8 : ff_D_preset_clr_assinc port map(
         D => q_out7,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out8,       
         clr => ff_assinc_clr
     );
@@ -136,7 +151,7 @@ begin
     
     ff_assinc9 : ff_D_preset_clr_assinc port map(
         D => q_out8,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out9,       
         clr => ff_assinc_clr
     );
@@ -146,7 +161,7 @@ begin
     
     ff_assinc10 : ff_D_preset_clr_assinc port map(
         D => q_out9,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out10,       
         clr => ff_assinc_clr
     );
@@ -156,7 +171,7 @@ begin
     
     ff_assinc11 : ff_D_preset_clr_assinc port map(
         D => q_out10,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out11,       
         clr => ff_assinc_clr
     );
@@ -166,7 +181,7 @@ begin
     
     ff_assinc12 : ff_D_preset_clr_assinc port map(
         D => q_out11,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out12,       
         clr => ff_assinc_clr
     );
@@ -176,7 +191,7 @@ begin
     
     ff_assinc13 : ff_D_preset_clr_assinc port map(
         D => q_out12,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out13,       
         clr => ff_assinc_clr
     );
@@ -186,7 +201,7 @@ begin
     
     ff_assinc14 : ff_D_preset_clr_assinc port map(
         D => q_out13,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out14,       
         clr => ff_assinc_clr
     );
@@ -197,7 +212,7 @@ begin
     
     ff_assinc15 : ff_D_preset_clr_assinc port map(
         D => q_out14,
-        clk => clk,
+        clk => clk_dividido,
         Q => q_out15,       
         clr => ff_assinc_clr
     );
