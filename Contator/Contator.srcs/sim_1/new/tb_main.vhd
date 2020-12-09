@@ -30,7 +30,7 @@ begin
     
     
     t_En <= not t_En after 5 ns;
-    t_Rst <= '0', '1' after 100 ns, '0' after 150ns;
+    t_Rst <= '1', '0' after 100 ns, '1' after 300ns , '0' after 350 ns;
     
    
 

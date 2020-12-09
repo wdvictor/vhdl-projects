@@ -23,7 +23,7 @@ begin
     ffD : process(clk , clr)
     begin
         if clr='1' then
-            qt <= '0';
+            qt <= '1';
         elsif falling_edge(clk) then
             qt <= D;
         end if;
