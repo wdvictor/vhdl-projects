@@ -9,7 +9,6 @@ entity ff_D_preset_clr_sinc is
            clk : in STD_LOGIC;
            Q : out STD_LOGIC;
            Q_not : out STD_LOGIC;
-           preset : in STD_LOGIC;
            clr : in STD_LOGIC);
 end ff_D_preset_clr_sinc;
 
@@ -30,8 +29,6 @@ begin
         -- o clear é 1, fazendo assim a saída igual a 0 (limpando a saída).
             if clr='1' then
                 qt <= '0';
-            elsif preset='1' then
-                qt <= '1';
             else
                 qt <= D;
             end if;
