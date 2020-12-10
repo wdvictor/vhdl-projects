@@ -1,0 +1,203 @@
+
+*** Running vivado
+    with args -log main.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: link_design -top main -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2098.738 ; gain = 0.000 ; free physical = 1243 ; free virtual = 4117
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2098.738 ; gain = 0.000 ; free physical = 1164 ; free virtual = 4030
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2098.738 ; gain = 0.137 ; free physical = 1164 ; free virtual = 4030
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2130.617 ; gain = 31.879 ; free physical = 1153 ; free virtual = 4017
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: f5220b73
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2324.570 ; gain = 193.953 ; free physical = 800 ; free virtual = 3668
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 174c4d0f8
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 174c4d0f8
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+Ending Logic Optimization Task | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 627 ; free virtual = 3498
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 626 ; free virtual = 3497
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 626 ; free virtual = 3497
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 626 ; free virtual = 3497
+Ending Netlist Obfuscation Task | Checksum: 16394d072
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.508 ; gain = 0.000 ; free physical = 626 ; free virtual = 3497
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.508 ; gain = 389.770 ; free physical = 626 ; free virtual = 3497
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2528.527 ; gain = 0.000 ; free physical = 624 ; free virtual = 3495
+INFO: [Common 17-1381] The checkpoint '/home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1/main_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file main_drc_opted.rpt -pb main_drc_opted.pb -rpx main_drc_opted.rpx
+Command: report_drc -file main_drc_opted.rpt -pb main_drc_opted.pb -rpx main_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/Infinity/Hugo/files/Vivado/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1/main_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2539.434 ; gain = 10.906 ; free physical = 608 ; free virtual = 3485
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 612 ; free virtual = 3482
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c0324691
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 612 ; free virtual = 3482
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 612 ; free virtual = 3482
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets JB_IBUF[0]] >
+
+	JB_IBUF[0]_inst (IBUF.O) is locked to IOB_X0Y138
+	JB_IBUF_BUFG[0]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y31
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c0324691
+
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 604 ; free virtual = 3471
+Phase 1 Placer Initialization | Checksum: c0324691
+
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 604 ; free virtual = 3471
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: c0324691
+
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2539.434 ; gain = 0.000 ; free physical = 604 ; free virtual = 3471
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 3 Warnings, 3 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 10 14:58:09 2020...
