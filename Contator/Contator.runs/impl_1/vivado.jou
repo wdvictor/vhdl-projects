@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Dec 10 14:57:09 2020
-# Process ID: 5827
-# Current directory: /home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1
-# Command line: vivado -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
-# Log file: /home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1/main.vdi
-# Journal file: /home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1/vivado.jou
+# Start of session at: Thu Dec 10 19:46:31 2020
+# Process ID: 216
+# Current directory: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/impl_1/main.vdi
+# Journal file: C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source main.tcl -notrace

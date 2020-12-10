@@ -10,28 +10,35 @@ end tb_main;
 
 architecture test of tb_main is
 
-    component main is
-    Port ( En : in STD_LOGIC;
-           Rst : in STD_LOGIC;
-           led : out STD_LOGIC_VECTOR (0 to 3));
+    component main
+    Port ( JB : in STD_LOGIC_VECTOR (1 downto 0);
+           led : out STD_LOGIC_VECTOR (3 downto 0);
+           seg : out STD_LOGIC_VECTOR (6 downto 0);
+           clk : in STD_LOGIC
+           );
     end component;
     
-    signal t_En, t_Rst : std_logic := '0';
-    signal t_led :std_logic_vector (3 downto 0) := "0000";
+    signal TJB : std_logic_vector (1 downto 0) := "00";
+    signal tclk: std_logic := '0';
+    signal tled: STD_LOGIC_VECTOR (3 downto 0);
+    signal tseg: STD_LOGIC_VECTOR (6 downto 0) := "0000000";
 
 
 begin
     
     uut : main port map(
-       En => t_en,
-       Rst => t_Rst,
-       led => t_led
+      JB => TJB,
+      led => tled,
+      seg => tseg,
+      clk => tclk   
     );
     
+    tclk <= not tclk after 5 ns;
+    TJB(0) <= '0'; --'0' after 200ns, '0' after 250ns;
+    TJB(1) <= '0'; -- '0' after 200ns, '0' after 250ns;
     
-    t_En <= not t_En after 5 ns;
-    t_Rst <= '1', '0' after 100 ns, '1' after 300ns , '0' after 350 ns;
-    
+   
+   
    
 
 end test;

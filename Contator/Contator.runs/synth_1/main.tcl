@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/synth_1/main.tcl"
+  variable script "C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/synth_1/main.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,24 +70,24 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/hugo/Desktop/vhdl-projects/Contator/Contator.cache/wt [current_project]
-set_property parent.project_path /home/hugo/Desktop/vhdl-projects/Contator/Contator.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo /home/hugo/Desktop/vhdl-projects/Contator/Contator.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/sources_1/imports/new/ff_D_clr.vhd
-  /home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/sources_1/new/main.vhd
+  {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/sources_1/imports/Desktop/BCD_to_7seg.vhd}
+  {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/sources_1/imports/new/ff_D_clr.vhd}
+  {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/sources_1/new/main.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -98,8 +98,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
-set_property used_in_implementation false [get_files /home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+read_xdc {{C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

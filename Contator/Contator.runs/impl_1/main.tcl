@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/impl_1/main.tcl"
+  variable script "C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/impl_1/main.tcl"
   variable category "vivado_impl"
 }
 
@@ -121,22 +121,22 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/hugo/Desktop/vhdl-projects/Contator/Contator.cache/wt [current_project]
-  set_property parent.project_path /home/hugo/Desktop/vhdl-projects/Contator/Contator.xpr [current_project]
-  set_property ip_output_repo /home/hugo/Desktop/vhdl-projects/Contator/Contator.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/hugo/Desktop/vhdl-projects/Contator/Contator.runs/synth_1/main.dcp
+  add_files -quiet {{C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.runs/synth_1/main.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/hugo/Desktop/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
+  read_xdc {{C:/Users/Victor Hugo/Documents/GitHub/vhdl-projects/Contator/Contator.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

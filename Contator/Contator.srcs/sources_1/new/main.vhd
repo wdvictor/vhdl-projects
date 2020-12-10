@@ -2,9 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity main is
-    Port ( JB : in STD_LOGIC_VECTOR (0 to 1);
-           led : out STD_LOGIC_VECTOR (0 to 3);
-           seg : out STD_LOGIC_VECTOR (6 downto 0));
+    Port ( JB : in STD_LOGIC_VECTOR (1 downto 0);
+           led : out STD_LOGIC;
+           seg : out STD_LOGIC_VECTOR (6 downto 0);
+           clk : in STD_LOGIC
+           );
 end main;
 
 architecture Behavioral of main is
@@ -38,6 +40,13 @@ architecture Behavioral of main is
     signal q_out2 : std_logic := '0';
     signal q_out3 : std_logic := '0';
     
+    
+    signal  en0 : std_logic := '0';
+    signal  en1 : std_logic := '0';
+    signal  en2 : std_logic := '0';
+    signal  en3 : std_logic := '0';
+    
+    
     signal En : std_logic;
     signal Rst : std_logic;
     
@@ -47,8 +56,10 @@ begin
 
     En <= JB(0);
     Rst <= JB(1);
+    
+ 
         
-    divisor_clk : process(En)
+    divisor_clk : process(clk)
      begin
         if rising_edge(En) then
             if counter = 100_000_000 then
@@ -60,16 +71,13 @@ begin
         end if;
      end process;
      
-     
-     led(0) <= q_not3;
-     led(1) <= q_not2;
-     led(2) <= q_not1;
-     led(3) <= q_not0;
+        
+    
      
      
      ff0: ff_D_clr port map(
      clr => Rst,
-     clk => En,
+     clk => clk_dividido,
      D => q_not0,
      Q => q_out0,
      Q_not => q_not0
@@ -105,10 +113,30 @@ begin
      Q_not => q_not3
      );
      
-     FF_number(0) <= q_not3;
-     FF_number(1) <= q_not2;
-     FF_number(2) <= q_not1;
-     FF_number(3) <= q_not0;
+     
+     
+     vvv : process(clk, En)
+     begin
+         if En='0' then
+             en0 <= q_not3;
+             en1 <= q_not2;
+             en2 <= q_not1;
+             en3 <= q_not0;
+             FF_number(0) <= q_not3;
+             FF_number(1) <= q_not2;
+             FF_number(2) <= q_not1;
+             FF_number(3) <= q_not0;
+         else
+             q_not3 <= en0;
+             q_not2 <= en1;
+             q_not1 <= en2;
+             q_not0 <= en3;
+             FF_number(0) <= en0;
+             FF_number(1) <= en1;
+             FF_number(2) <= en2;
+             FF_number(3) <= en3;
+        end if;
+      end process;
     
      seven_seg: BCD_to_7seg port map (A=>FF_number, LEDS=>seg );
      
